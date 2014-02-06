@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- <Button android:id="@+id/myButton" android:text="@string/hit_me"/> -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/myButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="启动第二个界面" />
+
+        <Button
+            android:id="@+id/myButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hit_me" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/radioActivityButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="单选" />
+
+        <Button
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="费纳图片" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/openTimePickerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时间控件" />
+
+        <Button
+            android:id="@+id/openProgressBarButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="进度条" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/openHandlerTestButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Handler" />
+
+        <Button
+            android:id="@+id/openHandlerTestButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Handler2" />
+
+        <Button
+            android:id="@+id/sqlitelerTestButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SQLite" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/openDownloadButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下载" />
+
+        <Button
+            android:id="@+id/openXmlParseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XML解析" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/openBroadcastButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="广播机制" />
+
+        <Button
+            android:id="@+id/openBroadcastButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="广播机制2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/openWifiButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="wifi" />
+        
+        <Button
+            android:id="@+id/openSpinneriButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spinner" />
+    </LinearLayout>
+
+</LinearLayout>

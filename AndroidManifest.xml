@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.a_4"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.a_4.ZyrActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.example.a_4.SecondActivity" android:label="second" />
+        <activity android:name="com.example.a_4.RadioActivity" android:label="单选测试" />
+        <activity android:name="com.example.a_4.ImageActivity" android:label="费纳"/>
+        <activity android:name="com.example.a_4.TimePickerActivity" android:label="时间控件"/>
+        <activity android:name="com.example.a_4.ProgressBarActivity" android:label="时间控件"/>
+        <activity android:name="com.example.a_4.HandlerActivity" android:label="Handler测试"/>
+        <activity android:name="com.example.a_4.HandlerActivity2" android:label="Handler测试2"/>
+        <activity android:name="com.example.a_4.SQLiteActivity" android:label="SQLite测试"/>
+        <activity android:name="com.example.a_4.DownloadActivity" android:label="下载测试"/>
+        <activity android:name="com.example.a_4.XMLActitity" android:label="XML解析测试"/>
+        
+        <activity android:name="com.example.a_4.broadcast._1_xml.BroadcastActivity" android:label="广播机制测试"/>
+        <receiver android:name="com.example.a_4.broadcast._1_xml.Receiver">
+           <intent-filter>
+               <action android:name="android.intent.action.EDIT" />
+           </intent-filter> 
+        </receiver>
+        
+        <activity android:name="com.example.a_4.broadcast._2_code.BroadcastActivity" android:label="广播机制测试2"/>
+        <!-- 以下是以xml方式注册的话， 
+        <receiver android:name="com.example.a_4.broadcast._2_code.SMSReceiver">
+			<intent-filter>
+				<action android:name="android.provider.Telephony.SMS_RECEIVED" />
+			</intent-filter>
+		</receiver>
+		-->
+		
+        <activity android:name="com.example.a_4.wifi.WifiActivity" android:label="wifi测试"/>
+        
+ 		<!-- spinner -->       
+        <activity android:name="com.example.a_4.widget.SpinnerActivity" android:label="Spinner测试"/>
+    </application>
+    
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    
+    <!-- 以下是使用wifi访问网络所需要的权限 -->
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+
+</manifest>
